@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: youtube-anaylzer-api
+    env: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    healthCheckPath: /api/health
